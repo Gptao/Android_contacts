@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请登录……"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:gravity="left" />
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名："
+            android:layout_marginTop="200dp"
+            android:textSize="20dp"
+            android:gravity="left"
+            android:id="@+id/user"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:gravity="center"
+            android:hint="username"
+            android:layout_alignBaseline="@+id/user"
+            android:layout_alignBottom="@+id/user"
+            android:layout_alignParentEnd="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码："
+            android:textSize="20dp"
+            android:gravity="left"
+            android:id="@+id/pass"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/user"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="password"
+            android:password="true"
+            android:layout_alignBaseline="@+id/pass"
+            android:layout_alignBottom="@+id/pass"
+            android:layout_alignStart="@+id/username"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="登录"
+        android:textColor="@color/colorPrimaryDark" />
+
+</LinearLayout>
